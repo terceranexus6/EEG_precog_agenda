@@ -17,8 +17,32 @@ con = 0
 salir = False
 arduino = serial.Serial(device, 9600)
 
+# listas para la agenda, 5 actividades
+agenda = ['','','','','']
+dificultad = [0,0,0,0,0]
+
+con = 0
+
+recordatorio=input("Introduce cada cuanto quieres el recordatorio (en segundos): ")
+
+while con < 5
+	agenda[con]=input("Introduce la tarea: ")
+	dificultad[con]=input("Introduce la dificultad de la tarea (de 0 a 5):")
+	con = con + 1
+
 #crear un archivo para el log
 file = open("testfile_lectura.txt","w")
+
+#crear topes de concentracion
+
+#topeA = 10
+topeB = 30
+topeC = 50
+#topeD = 70
+#topeE = 80
+
+#ultima tarea
+utarea = 0
 
 
 while salir == False:
@@ -31,38 +55,35 @@ while salir == False:
 	file.write("Value:")
 	file.write(valor)
 
-	#definimos contraseña
-	str1 = randrange(21863)
-	if valor > 40 and valor < 50:
-		contra = 'qoiwubhftayoooui'
-	else:
-		contra = 'osidapojanasakhv'
-	con = con +1
 
-	if con == 30:
-		salir = True
+	if valor < topeB
+		for x in dificultad:
+			if dificultad[x] < 2
+				print agenda[x]
+				print "Tu concentracion es actualmente baja."
+				utarea = x
+	elif valor > topeB and valor < topeC
+		for x in dificultad:
+			if dificultad[x] >= 2 and dificultad[x] <= 3
+				print agenda[x]
+				print "Tu concentracion es actualmente media."
+				utarea = x
+	else
+		for x in dificultad:
+			if dificultad[x] >= 4 and dificultad < 10
+				print agenda[x]
+				print "Tu concentracion es actualmente alta."
+				utarea = x
+
+
+
+	time.sleep(recordatorio)
+	respuesta=input("¿Has terminado la tarea? (si/no) : ")
+
+	if respuesta = "si"
+		agenda[utarea] = "acabado"
+		dificultad[utarea] = 999
 
 
 #cerramos el log
 file.close()
-
-nombre = "clave"+".txt"
-
-create_f="touch "+nombre
-command = "sudo gpg --yes --batch --cipher-algo AES256 --passphrase=["+contra+"] -c "+nombre
-command2 = "rm -rf "+nombre
-
-print ("la contraseña seria: ")
-print (contra)
-
-print("el comando seria: ")
-print (command)
-
-#create the file
-#subprocess.call(create_f, shell=True)
-
-#encrypt with passphrase
-subprocess.call(command, shell=True)
-
-#delete the message
-#subprocess.call(command2, shell=True)
