@@ -8,6 +8,14 @@ If the concentration level is high the application will suggest some tasks alrea
 
 Take a look to the [HOWTO](https://github.com/terceranexus6/EEG_precog_agenda/blob/master/documentation/how_to.md) if you already have the device, the IDE and a Linux at hand.
 
+Index:
+
+- [Why experimenting with human-computer interaction]()
+- [Basic setup]()
+- [How to use it]()
+- [Arduino code in C]()
+- [Python code]()
+
 ## Tools used
 
 #### Hardware
