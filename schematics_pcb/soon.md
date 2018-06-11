@@ -1,1 +1,0 @@
-in this dir goes schematics and pcb images, still working on it
