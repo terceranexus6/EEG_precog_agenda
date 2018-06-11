@@ -2,6 +2,8 @@
 
 In the Philip K Dick work, there are humans who are called "**precogs**", with mental habilities usually related with reading the future, but also in general.
 
+![](https://cdn.inquisitr.com/wp-content/uploads/2016/05/Minority-Report-precog.jpg)
+
 This application is aimed to work wit a combination of Electroencephalography (EEG) and Electrocardiography (ECG) for organizing activities depending on the concentration of the user.
 
 If the concentration level is high the application will suggest some tasks already configured to be difficult, if not, it will suggest easier tasks.
