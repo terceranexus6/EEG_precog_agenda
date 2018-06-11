@@ -10,11 +10,11 @@ Take a look to the [HOWTO](https://github.com/terceranexus6/EEG_precog_agenda/bl
 
 Index:
 
-- [Why experimenting with human-computer interaction]()
-- [Basic setup]()
-- [How to use it]()
-- [Arduino code in C]()
-- [Python code]()
+- [Why experimenting with human-computer interaction](https://github.com/terceranexus6/EEG_precog_agenda/blob/master/documentation/extra.md)
+- [Basic setup](https://github.com/terceranexus6/EEG_precog_agenda/blob/master/documentation/basics.md)
+- [How to use it](https://github.com/terceranexus6/EEG_precog_agenda/blob/master/documentation/how_to.md)
+- [Arduino code in C](https://github.com/terceranexus6/EEG_precog_agenda/tree/master/code/arduino)
+- [Python code](https://github.com/terceranexus6/EEG_precog_agenda/tree/master/code/python)
 
 ## Tools used
 

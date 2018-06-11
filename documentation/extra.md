@@ -1,6 +1,6 @@
 # Why experimenting on human-machine interaction?
 
-Human-machine interaction investigation aims to enhance the user experience by creating a more reliable, natural environment for her/him. Mark Weisser, "father" of ubiquous computing, in his paper "The Computer for the 21st Cen" said:
+Human-machine interaction investigation aims to enhance the user experience by creating a more reliable, natural environment for her/him. Mark Weisser, "father" of ubiquous computing, in his paper "[The Computer for the 21st Century](https://www.ics.uci.edu/~corps/phaseii/Weiser-Computer21stCentury-SciAm.pdf)" said:
 
 ```
 The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguish.
@@ -14,5 +14,3 @@ For this, with this project I was aiming to reach some of the most important poi
 - Something that implies a sustantial change in our current computer interacion.
 - Low cost
 - Open source
-
- 
