@@ -9,6 +9,7 @@ import serial
 import sys
 from random import randrange
 import subprocess
+import os
 
 #conectarse al arduino en el puerto que corresponda
 device='/dev/ttyACM0'
@@ -70,10 +71,14 @@ while(True):
 
     valor = arduino.readline()
     file.write(valor)
+    if (int(valor) == 0):
+        os.system('sudo shutdown now')
 
     #probando
+    '''
     print(valor)
     time.sleep(1)
+    '''
 
     if (int(valor) < topeB):
         print "Tu concentracion es actualmente baja."
